@@ -1,0 +1,14 @@
+<idea-plugin>
+    <id>com.monzo.syntheticsmigrator</id>
+    <name>Kotlin Synthetics Migrator</name>
+    <description><![CDATA[Migrates from Kotlin Synthetics Imports.]]></description>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>org.jetbrains.kotlin</depends>
+
+    <actions>
+        <action id="sdk.action.PopupDialogAction" class="com.monzo.syntheticsmigrator.KotlinSyntheticsMigrator">
+            <add-to-group group-id="RefactoringMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
